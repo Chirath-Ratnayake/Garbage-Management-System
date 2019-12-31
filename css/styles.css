@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 8px;        
+}
+
+/* Add a gray background color with some padding */
+body {
+    font-family: Arial;
+    padding: 10px;
+    background-color: #323531;
+    margin: auto;
+}
+
+p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+.nav{
+    background: #4CCFB1;
+    min-height: 59px;
+    overflow: auto;
+}
+
+.nav .left{
+    float: left;
+    margin-left: 1em;
+}
+
+.nav ul {
+    list-style-type: none;
+}
+
+.nav .left li{
+    float: left;
+}
+
+.nav a{
+    display: block;
+    padding: 17px 20px;
+    line-height: 20px;
+    color: #191919;
+    text-decoration: none;
+    font-size: 25px;
+    text-shadow: 0 0 3px white, 0 0 5px green;
+    font-family: Arial;
+    font-weight: bold;
+    
+}
+
+.nav .left a:hover{
+    background: #99ccff;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+#aboutgtf{
+    height: 100px;
+    width: 100%;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: #CBC7C7;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.topic{
+    font-size: 30px;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+.topictt{
+    text-shadow: 0 0 3px aqua, 0 0 3px #0000FF;
+}
+
+.sidetopic{
+    font-size: 30px;
+    text-shadow: 0 0 5px green, 0 0 5px white;    
+}
+
+/* Footer */
+.footer {
+    padding: 8px;
+    text-align: center;
+    background: #DC783C;
+    margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
